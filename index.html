@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Village Scheduler - FCFS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="village-container">
+            <div id="grid-container"></div>
+        </div>
+
+        <div class="ui-panel">
+            <header>
+                <h1>Village Dashboard</h1>
+            </header>
+            
+            <section class="stats-section">
+                <div class="stat-item">
+                    <h2>Credits</h2>
+                    <p id="credits-display">200 💰</p>
+                </div>
+                <div class="stat-item">
+                    <h2>Builders</h2>
+                    <p id="builders-display">1 👷</p>
+                </div>
+            </section>
+            
+            <section class="algorithm-section">
+                <h3>Scheduling Algorithm</h3>
+                <p>First-Come, First-Serve (FCFS)</p>
+            </section>
+
+            <section class="difficulty-section">
+                <h3>Select Difficulty</h3>
+                <div class="difficulty-buttons">
+                    <button id="btn-easy">Easy</button>
+                    <button id="btn-medium">Medium</button>
+                    <button id="btn-hard">Hard</button>
+                </div>
+            </section>
+
+            <section class="missions-section">
+                <h3>Today's Missions</h3>
+                <ul id="missions-list"></ul>
+            </section>
+
+            <section class="queue-section">
+                <h3>Builder's Task Queue</h3>
+                <div id="task-queue"></div>
+            </section>
+            
+            <section class="log-section">
+                <h3>Activity Log</h3>
+                <div id="activity-log"></div>
+            </section>
+            
+            <button id="edit-layout-btn">Edit Base Layout</button>
+        </div>
+    </div>
+
+    <script src="map.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
