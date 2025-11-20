@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Village Scheduler - FCFS</title>
+    <title>GANTTPLAY Scheduler</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -30,7 +30,19 @@
             
             <section class="algorithm-section">
                 <h3>Scheduling Algorithm</h3>
-                <p>First-Come, First-Serve (FCFS)</p>
+                <select id="algorithm-select">
+                    <option value="FCFS">First-Come, First-Serve</option>
+                    <option value="SJF">Shortest Job First (SJF)</option>
+                    <option value="SRTF">Shortest Remaining Time First (SRTF)</option>
+                    <option value="PriorityNP">Priority (Non-Preemptive)</option>
+                    <option value="PriorityP">Priority (Preemptive)</option>
+                    <option value="RR">Round Robin</option>
+                </select>
+            </section>
+
+            <section class="algorithm-settings-section" id="tq-container">
+                <h3>Time Quantum (s)</h3>
+                <input type="number" id="time-quantum" value="4" min="1" max="10">
             </section>
 
             <section class="difficulty-section">
